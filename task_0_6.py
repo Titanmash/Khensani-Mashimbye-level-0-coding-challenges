@@ -9,4 +9,3 @@ def max_number(num1, num2, num3):
 
 
 
-print(max_number(3,5,6))
