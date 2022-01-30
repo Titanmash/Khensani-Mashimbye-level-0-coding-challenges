@@ -1,7 +1,7 @@
-def temp_celc(cel):
-    fer = int(round((int(cel) - 32) * 5 / 9))
-    return fer
+def temp_celsius(celsius):
+    fahrenheit = int(round((9 * int(celsius)) / 5 + 32))
+    return fahrenheit
 
-def temp_fer(fer):
-    cel = int(round((9 * int(fer)) / 5 + 32))
-    return cel
+def temp_fahrenheit(fahrenheit):
+    celsius = int(round((fahrenheit - 32) * 5 / 9))
+    return celsius
