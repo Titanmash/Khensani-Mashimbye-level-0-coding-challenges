@@ -1,8 +1,7 @@
-def triangle_area(a, b, c):
-    s = (a + b + c)/2
-    area = (s*(s-a)*(s-b)*(s-c))**0.5
-    print(area)
-    return area
+def triangle_area(length_one, length_two, length_three):
 
-triangle_area(8,6,3)
+    semiperimeter = (length_one + length_two + length_three)/2
+    area = (semiperimeter * (semiperimeter - length_one)*(semiperimeter - length_two) *
+            (semiperimeter - length_three))**0.5
+    return area
 
