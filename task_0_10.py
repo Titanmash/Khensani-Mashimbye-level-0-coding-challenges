@@ -1,6 +1,6 @@
 def common_letters(first_word, second_word):
-    first_word = set(first_word)
-    second_word = set(second_word)
-    print("Common letters:", end=' ')
-    print(','.join(first_word.intersection(second_word)))
-    
+    let = ({letter for letter in first_word.lower() if letter in second_word.lower()})
+    print("Common Letters:", end=' ')
+    print(*let, sep=',')
+
+common_letters("house","computers")
