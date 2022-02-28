@@ -1,7 +1,5 @@
-def vowel(text):
+def vowels_in_string(string):
     vowels = "AaEeIiOoUu"
-    let = ({letter for letter in text.lower() if letter in vowels})
+    vowels_in_str = ({letter for letter in string.lower() if letter in vowels})
     print("Vowels:", end=' ')
-    print(*let, sep=',')
-    
-vowel("Umuzi")
+    print(*vowels_in_str, sep=',')
