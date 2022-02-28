@@ -1,11 +1,11 @@
-def hours_converter(hour):
-    hours = ' hour '
-    minute = ' minute '
-    x = divmod(hour, 60)
-    if x[0] != 1:
-        hours = " hours "
+def number_to_hours_and_minutes(number):
+    hours = ' hour, '
+    minute = ' minute.'
+    remainder = divmod(number, 60)
+    if remainder[0] != 1:
+        hours = " hours, "
 
-    if x[1] != 1:
-        minute = " minutes "
+    if remainder[1] != 1:
+        minute = " minutes."
 
-    return str(x[0]) + hours + str(x[1]) + minute
+    return str(remainder[0]) + hours + str(remainder[1]) + minute
